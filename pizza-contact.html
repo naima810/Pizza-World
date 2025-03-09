@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pizza World</title>
+    <link rel="stylesheet" href="pizza-contact.css">
+</head>
+<body>
+    <nav>
+        <div class="navi">
+            <a href="pizza-home.html"><img class="img" src="pizza-logo.png"></a>
+            <a class="logo" href="pizza-home.html">Pizza World</a>
+        </div>
+        <div class="link show">
+            <a class="about" href="pizza-home.html">Home</a>
+            <a href="pizza-menu.html">Menu</a>
+            <a class="about" href="pizza-about.html">About Us</a>
+            <a class="contact" href="#">Contact Us</a>
+        </div>
+        <div class="link-top">
+        <button class="order">Order Now</button>
+        <button class="navbar-toggle">☰</button>
+        </div>
+    </nav>
+    <section class="contact-sec">
+        <h1 class="contact-head">Contact Us</h1>
+        <div class="contact-div">
+            <h2 class="h">Phone Number : </h2>
+            <p>+92 321-1146070</p>
+        </div>
+        <div class="contact-div">
+            <h2 class="h">Address :</h2>
+            <p>Ansari road, Street Number 22, Gulistan Colony Mustafabad, Lahore, Pakistan.</p>
+        </div>
+    </section>
+    <section>
+        <h1 class="contact-head">Form</h1>
+        <form id="form">
+            <!-- <legend>For Complain</legend> -->
+            <label for="name">Name:  </label><br>
+			<input type="text" class="name" name="name" placeholder="Enter Your Name" required><br>
+			
+			<label for="phone">Phone Number: </label><br>
+			<input type="text" class="phone" name="phone" placeholder="03123456789" required><br>
+			
+			<label for="complaint">Complian: <label><br>
+            <textarea class="complaint" name="complaint" rows="5" cols="30" placeholder="Write something here..."></textarea><br><br>
+            <button class="submit">Submit</button>
+            </form>
+    </section>
+    <footer>
+        <div class="f-all">
+            <div class="f-nav">
+                <a href="pizza-home.html">Home</a>
+                <a href="pizza-menu.html">Menu</a>
+                <a href="pizza-about.html">About Us</a>
+                <a href="pizza-contact.html">Contact Us</a>
+            </div>
+            <div class="f-contact">
+                <p>+92 321-1146070</p>
+                <p>Pizzaworld@gmail.com</p>
+                <p>Timing : Everyday 4pm - 2am</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6689.416728300584!2d74.37044467208663!3d31.55531786108501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905cf09094107%3A0x7a58f0b2079583e7!2sPizza%20world!5e0!3m2!1sen!2s!4v1735460769944!5m2!1sen!2s"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="copyright">&copy; 2024 Pizza World. All rights reserved</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="pizza-contact.js"></script>
+</body>
+</html>

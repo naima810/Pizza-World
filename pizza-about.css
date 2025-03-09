@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: ; */
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(244, 244, 85);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+body{
+    background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
+}
+/*Nav bar*/
+
+nav{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px;
+    border-bottom:1px solid white;
+    /* position: fixed; */
+    z-index: 2;
+    position: sticky;
+    top: 0px;
+}
+nav .img{
+    height: 30px;
+}
+.navi{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(184, 2, 2);
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: end;
+    gap: 20px;
+    margin-right: 20px;
+
+}
+.link a{
+    text-decoration: none;
+    color: rgb(244, 244, 85);
+    font-size: 1.5rem
+}
+.link a:hover{
+    font-weight: bolder;
+    color: rgb(184, 2, 2);
+
+}
+.link-top{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vw;
+}
+.order{
+    padding: 0.5vh 1vw;
+    background-color: rgb(184, 2, 2);
+    color: rgb(244, 244, 85);
+    border: none;
+    font-weight: bolder ;
+    border-radius: 10px;
+}
+.order:hover{
+    background-color:  rgb(244, 244, 85);
+    color: rgb(184, 2, 2);
+}
+.navbar-toggle{
+    display: none;
+    background-color: transparent;
+    color: rgb(244, 244, 85);
+    border: none;
+    font-size: larger;
+}
+@media (max-width:770px){
+    .navbar-toggle{
+        display: block;
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left:70vw;
+        top: 11vh;
+        background-color:rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        width: fit-content;
+        padding: 2vw;
+    }
+    .show{
+        display: none;
+    }
+    .link a{
+        width: max-content; 
+    }
+    .link a:hover{
+        color: rgb(184, 2, 2);
+    }
+}
+/*section*/
+
+section{
+    padding:1vw 7vw;
+    color: rgb(244, 244, 85);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    font-size: 40px; 
+    text-align: start;   
+}
+h1, h2, h3{
+    color: rgb(244, 244, 85);
+}
+h2{
+    font-size:26px;
+}
+p{
+    font-size: 18px;
+}
+span{
+    color:rgb(184, 2, 2);
+    font-size:20px;
+}
+.discription{
+    background-color: rgba(255, 254, 254,0.2);
+    color: white;
+    font-size:18px;
+    padding: 3vw;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin: 1vh;
+    width: 60vw;
+
+}
+/*Footer*/
+footer{
+
+    width: 100vw;
+    background-color:rgba(27, 26, 26, 0.9);
+    border-radius: 20px 20px 0px 0px;
+    position: sticky;
+    bottom: 0px;
+    display:flex;
+    flex-direction:column;
+    gap: 50px;
+    padding: 50px 2vw 5px;
+    justify-content: center;
+    align-items: center;
+}
+.f-all{
+    color: rgb(244, 244, 85);
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.f-nav{
+    display:flex;
+    flex-direction:column;
+    font-size:16px;
+    font-weight: bolder;
+    gap: 20px;
+}
+.f-nav a{
+    text-decoration:none;
+    color: rgb(244, 244, 85);
+}
+.f-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size:16px
+}
+iframe{
+    width: 40vw;
+    border-radius: 20px;
+}
+.copyright{
+    color: rgb(244, 244, 85);
+}
+@media (max-width:750px){
+    .f-all{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .f-nav{
+        flex-direction: row;
+    }
+    .f-contact{
+        flex-direction: row;
+    }
+    iframe{
+        width: 80vw;
+    }
+}
+@media (max-width:560px){
+    .f-contact{
+        flex-direction: column;
+    }
+}
